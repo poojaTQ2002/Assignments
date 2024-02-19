@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        let person = 
+        '{"employees":[' +
+                        '{"firstName":"John","lastName":"Doe" },' +
+                        '{"firstName":"Anna","lastName":"Smith" },' +
+                        '{"firstName":"Peter","lastName":"Jones" }]}';
+        let obj = JSON.parse(person);
+        document.getElementById("demo").innerHTML =
+       obj.employees[1].firstName + " " + obj.employees[1].lastName;
+    </script>
+
+</body>
+</html>

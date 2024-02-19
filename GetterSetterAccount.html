@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Account =
+         {
+             get ano()
+              {
+                return this.accountNo
+              },
+            set ano(value)
+             {
+                this.accountNo= value
+            },
+            get amount() 
+            {
+                return this.balance;
+            },
+            set amount(value) 
+            {
+                if (value < 2000)
+                 {
+                    alert("Error: Balance cannot be less than 2000")
+                   
+                } else {
+                    this.balance = value
+                    alert(this.amount)
+                }
+            }
+        }
+        Account.ano = "123456789";
+        Account.amount = 3000;
+    </script>
+</body>
+</html>

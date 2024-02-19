@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="fun"></h1>
+    <form>
+        <label>Sid</label>
+        <input type ="text" name ="sid" ><br><br>
+        <label>Sname</label>
+        <input type ="sname" name ="sname" ><br><br>
+       
+        
+        <button type="button" Add()>Add</button>
+        <button type="button">Show</button>
+    </form>
+    <script>
+        function Add()
+        {
+            if(typeof(Storage)!=='undefined')
+         {
+            localStorage.setItem('sid','101') 
+            document.getElementById('fun').innerHTML=localStorage.getItem('sid')
+            localStorage.setItem('sname','Shreya') 
+            document.getElementById('fun').innerHTML=localStorage.getItem('sname')
+            
+         }
+        }
+       
+        // if(typeof(Storage)!=='undefined')
+        // {
+        //    localStorage.setItem('sid','101') 
+        //    document.getElementById('fun').innerHTML=localStorage.getItem('sid')
+        // }
+        // else
+        // {
+        //     document.getElementById('fun').innerHTML='Invlid Data'
+        // }
+    </script>
+</body>
+</html>

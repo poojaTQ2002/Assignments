@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let User=
+        {
+            get name()
+            {
+                return this.name
+
+            },
+            set name(value)
+            {
+                this.name=value
+            },
+            set contact(value)
+            {
+                if(value.length<10)
+                {
+                    alert("Number Must be 10 digit")
+                }
+                else
+                {
+                    this.mobileNo=value
+                    alert(User.contact)
+                }
+            },
+            get contact()
+            {
+                return this.mobileNo
+            }
+        }
+        User.contact='61586654666'
+    
+    </script>
+</body>
+</html>

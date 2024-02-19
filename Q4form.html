@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="userform">
+        <label >Name</label>
+        <input type ="text" name ="name" placeholder="Enter Name"><br><br>
+
+        <label>Skillset</label><br>
+        <input type="checkbox" name="c">
+        <label for="c"> C</label><br>
+        <input type="checkbox" name="c++">
+        <label for="c++"> C++</label><br>
+        <input type="checkbox" name="java">
+        <label for="java"> Java</label><br>
+        <input type="checkbox" name="angular">
+        <label for="angular"> Angular</label><br><br>
+
+        <label >Gender</label><br>
+        <label>Male</label>
+        <input type="radio" name="Gender"><br>
+        <label>Female</label>
+        <input type="radio" name="Gender"><br><br>
+
+        <button type="button" onclick="myFunction()">Add</button><br><br>
+    </form>
+    <p id="demo">Form</p>
+
+    <textarea id="displayArea" rows="5" cols="30" readonly></textarea><br><br>
+    <script>
+            function myFunction()
+             {
+               document.getElementById("demo").innerHTML="userform";
+            }
+    </script>
+</body>
+</html>

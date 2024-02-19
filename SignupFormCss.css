@@ -1,0 +1,23 @@
+/* Bordered form */
+body{
+  align-content: center;
+}
+form {
+  margin: 10px;
+  padding: 5px;
+  text-align:center;
+  
+}
+h1{
+    color:blueviolet;
+}
+label{
+    background-origin: padding-box;
+}
+button{
+    background-color: aquamarine;
+    width: 100px;
+  padding: 10px 18px;
+}
+
+
